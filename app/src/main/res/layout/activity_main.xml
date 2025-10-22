@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view_inic"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/purple"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:id="@+id/image_infinito"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/infinito"
+        android:layout_alignTop="@+id/view_inic"
+        android:layout_alignBottom="@+id/view_inic"
+        android:layout_marginStart="32dp"
+        app:tint="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/image_carinha"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/carinha"
+        android:layout_alignBottom="@id/view_inic"
+        android:layout_alignTop="@id/view_inic"
+        android:layout_centerHorizontal="true"
+        app:tint="@color/white"
+        />
+    <ImageView
+        android:id="@+id/image_sol"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/solzinho"
+        android:layout_alignBottom="@id/view_inic"
+        android:layout_alignTop="@id/view_inic"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        app:tint="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/text_view_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_inic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/text_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riscos devem ser corridos, porque o maior perigo é não arriscar nada!"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        />
+    <View
+        android:id="@+id/view_risco"
+        android:layout_below="@+id/text_frase"
+        android:layout_width="128dp"
+        android:layout_height="5dp"
+        android:background="@color/purple"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="4dp"
+
+
+        />
+    <Button
+        android:id="@+id/button_nova_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOVA FRASE"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        app:cornerRadius="10dp"
+        />
+
+</RelativeLayout>
