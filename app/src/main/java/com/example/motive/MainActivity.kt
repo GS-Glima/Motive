@@ -29,9 +29,10 @@ class MainActivity : AppCompatActivity() {
         var imageAll = findViewById<ImageView>(R.id.image_infinito)
         var imageHappy = findViewById<ImageView>(R.id.image_carinha)
         var imageSun = findViewById<ImageView>(R.id.image_sol)
+        val fraseRepo = FraseRepository()
 
         botaoFrase.setOnClickListener {
-            var fraseSorteada = FraseRepository.getFrase(0)
+            var fraseSorteada = fraseRepo.getFrase(0)
             novaFrase.text = fraseSorteada
         }
 
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             imageHappy.setColorFilter(ContextCompat.getColor(this, R.color.white))
             imageHappy.setColorFilter(ContextCompat.getColor(this, R.color.black))
             imageSun.setColorFilter(ContextCompat.getColor(this, R.color.black))
-            var fraseSorteada = FraseRepository.getFrase(0)
+            var fraseSorteada = fraseRepo.getFrase(0)
             novaFrase.text = fraseSorteada
         }
     }
