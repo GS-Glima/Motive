@@ -6,9 +6,9 @@ class FraseRepository {
 
     data class Frase(val descricao : String, val categoria : Int)
 
-    val all = 0;
-    val happy = 1;
-    val sunny = 2;
+    val all = 0
+    val happy = 1
+    val sunny = 2
 
     private val listPhrases: List<Frase> = listOf(
         Frase("Não sabendo que era impossível, foi lá e fez.", happy),
